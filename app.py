@@ -1,8 +1,8 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-@app.route('/')
 
+@app.route('/')
 def hello_world():
     try:
         user_id = int(request.args.get('id', 1))
